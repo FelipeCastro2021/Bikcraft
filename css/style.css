@@ -114,7 +114,7 @@
   font: 600 6.4rem/1.125 'Popppins', sans-serif;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 956px) {
   .font-1-xxl {
     font-size: 4.2rem;
   }
@@ -141,6 +141,119 @@
   }
   .font-1-m {
     font-size: 1.6rem;
+  }
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: Min(95vw, 120rem);
+  margin: 0 auto;
+}
+
+#header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  padding: 3.2rem 0;
+}
+
+#header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.6rem 3.2rem;
+}
+
+#header .container ul li a {
+  padding: 1.6rem 0;
+}
+
+#header .container ul li a::after {
+  content: '';
+  width: 0;
+  height: 0.2rem;
+  margin-top: 0.4rem;
+  display: block;
+  background-color: #ffffff;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+#header .container ul li a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 956px) {
+  #header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.2rem;
+  }
+  #header .container ul li {
+    padding: 1.2rem 2.8rem;
+    border-radius: 0.4rem;
+    color: #ffffff;
+    background-color: #4d4d4d;
+  }
+  #header .container ul li:hover {
+    background-color: #707070;
+  }
+  #header .container ul li a::after {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
