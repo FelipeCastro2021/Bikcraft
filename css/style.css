@@ -1,6 +1,63 @@
 /* <-------------- Gray Colors --------------> */
 /* <-------------- Main Colors --------------> */
 /* <-------------- Gradient Colors --------------> */
+/* <-------------- CSS Utility --------------> */
+.cor-c1 {
+  color: var(--c1);
+}
+
+.cor-c2 {
+  color: var(--c2);
+}
+
+.cor-c3 {
+  color: var(--c3);
+}
+
+.cor-c4 {
+  color: var(--c4);
+}
+
+.cor-c5 {
+  color: var(--c5);
+}
+
+.cor-c6 {
+  color: var(--c6);
+}
+
+.cor-c7 {
+  color: var(--c7);
+}
+
+.cor-c8 {
+  color: var(--c8);
+}
+
+.cor-c9 {
+  color: var(--c9);
+}
+
+.cor-c10 {
+  color: var(--c10);
+}
+
+.cor-p1 {
+  color: var(--p1);
+}
+
+.cor-p2 {
+  color: var(--p2);
+}
+
+.cor-p3 {
+  color: var(--p3);
+}
+
+.cor-p4 {
+  color: var(--p4);
+}
+
 .font-1-xs {
   font: 400 1.2rem/1.33 'Poppins', sans-serif;
 }
