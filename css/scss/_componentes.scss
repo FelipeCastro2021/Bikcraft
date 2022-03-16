@@ -2,3 +2,42 @@
   width: Min(95vw, 120rem);
   margin: 0 auto;
 }
+
+img[src$='.jpg'] {
+  border-radius: 0.4rem;
+}
+
+.titulo span {
+  color: $p1;
+}
+
+.btn {
+  background: $gradient;
+
+  display: inline-block;
+
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.5rem;
+
+  text-transform: uppercase;
+  color: $p4;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.33;
+  font-weight: 600;
+
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: $gradient-hover;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 1.2rem 2rem;
+
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
