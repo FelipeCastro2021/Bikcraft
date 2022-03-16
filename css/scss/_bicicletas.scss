@@ -1,0 +1,74 @@
+#bicicletas {
+  padding: 6rem 0 12rem;
+}
+
+#bicicletas h2 {
+  margin-bottom: 4rem;
+}
+
+#bicicletas .bicicletas-lista {
+  width: Min(95vw, 144rem);
+  margin: 0 auto;
+  padding: 0 0 2rem;
+
+  display: flex;
+  gap: 4rem;
+
+  overflow-x: auto;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item {
+  flex: 1;
+  min-width: 35rem;
+
+  display: block;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item h3::before {
+  transition: width 0.2s;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item span {
+  transition: margin 0.2s;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item:hover h3::before {
+  width: 3.2rem;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item:hover span {
+  margin-left: 3.6rem;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item img {
+  margin-bottom: 1.2rem;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item h3 {
+  margin-bottom: 0.4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item h3::before {
+  content: '';
+  width: 1.6rem;
+  height: 0.4rem;
+
+  display: inline-block;
+
+  margin-right: 0.4rem;
+
+  background-color: $p1;
+}
+
+#bicicletas .bicicletas-lista .bicicletas-item span {
+  margin-left: 2rem;
+}
+
+@media (max-width: 867px) {
+  #bicicletas .bicicletas-lista {
+    gap: 2rem;
+  }
+}
