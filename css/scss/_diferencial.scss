@@ -24,12 +24,29 @@
   margin-bottom: 2.8rem;
 }
 
-#tecnologias .tecnologias-texto p {
+#tecnologias .tecnologias-texto > p {
   margin-bottom: 4rem;
 }
 
 #tecnologias .tecnologias-texto a {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
+}
+
+#tecnologias .tecnologias-vantagens {
+  display: flex;
+  gap: 4rem;
+}
+
+#tecnologias .tecnologias-vantagens img {
+  margin-bottom: 0.4rem;
+
+  width: 2.4rem;
+}
+
+#tecnologias .tecnologias-vantagens h3 {
+  margin-bottom: 1.2rem;
+
+  width: max-content;
 }
 
 #tecnologias .tecnologias-image img {
@@ -54,11 +71,18 @@
     padding: 4rem 0;
   }
 
-  #tecnologias .tecnologias-texto p {
+  #tecnologias .tecnologias-texto > p {
     max-width: 60ch;
   }
 
   #tecnologias .tecnologias-image {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #tecnologias .tecnologias-vantagens {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
