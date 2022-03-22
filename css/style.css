@@ -901,4 +901,64 @@ img[src$='.jpg'] {
 #vantagens .vantagens-item p {
   max-width: 60ch;
 }
+
+#perguntas {
+  padding: 6rem 0;
+}
+
+#perguntas h2 {
+  margin-bottom: 8rem;
+}
+
+#perguntas dl > div {
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+#perguntas dl > div:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+
+#perguntas dt {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#perguntas dt::before {
+  content: '';
+  width: 1.2rem;
+  height: 0.5rem;
+  display: inline-block;
+  margin-right: 0.8rem;
+  background-color: #ffbf00;
+}
+
+#perguntas dt::after {
+  content: '';
+  width: 1.4rem;
+  height: 0.6rem;
+  display: inline-block;
+  background: url("/img/icones/seta-abrir.svg") no-repeat;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#perguntas dt:hover::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#perguntas dd {
+  max-width: 80ch;
+  margin-left: 2rem;
+  padding-top: 1.6rem;
+}
 /*# sourceMappingURL=style.css.map */
