@@ -11,11 +11,22 @@ img[src$='.jpg'] {
   color: $p1;
 }
 
+.title {
+  background-color: $c2;
+
+  padding: 3.2rem;
+}
+
+.title .container > span {
+  margin-bottom: 0.8rem;
+}
+
 .btn {
   background: $gradient;
 
   display: inline-block;
 
+  width: max-content;
   padding: 1.6rem 3.2rem;
   border-radius: 0.5rem;
 

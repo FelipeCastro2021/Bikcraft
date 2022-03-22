@@ -191,10 +191,22 @@ img[src$='.jpg'] {
   color: #ffbf00;
 }
 
+.title {
+  background-color: #202020;
+  padding: 3.2rem;
+}
+
+.title .container > span {
+  margin-bottom: 0.8rem;
+}
+
 .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffbf00), to(#f2a50b));
   background: linear-gradient(180deg, #ffbf00 0%, #f2a50b 100%);
   display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   padding: 1.6rem 3.2rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
@@ -764,7 +776,6 @@ img[src$='.jpg'] {
 
 #seguros .seguros-plano a {
   grid-column: span 2;
-  place-self: start;
 }
 
 @media (max-width: 768px) {
@@ -788,5 +799,71 @@ img[src$='.jpg'] {
   #seguros .seguros-plano a {
     grid-column: auto;
   }
+}
+
+#footer {
+  background-color: #000000;
+  padding: 6rem 0 3.2rem;
+}
+
+.footer-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4fr 5fr;
+      grid-template-columns: 3fr 4fr 5fr;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+
+#footer h3 {
+  margin-bottom: 3.2rem;
+}
+
+#footer ul {
+  margin-bottom: 3.2rem;
+}
+
+#footer li {
+  margin-bottom: 1.6rem;
+}
+
+#footer .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Termos e Condições */
+#termos {
+  padding: 6rem 0;
+}
+
+#termos h2 {
+  margin-bottom: 2rem;
+}
+
+#termos p {
+  font: 400 1.8rem/1.33 'Roboto', sans-serif;
+  max-width: 72ch;
+}
+
+#termos p + p {
+  margin-top: 1.2rem;
+}
+
+#termos p + h2 {
+  margin-top: 4.8rem;
 }
 /*# sourceMappingURL=style.css.map */
