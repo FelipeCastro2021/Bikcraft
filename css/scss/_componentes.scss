@@ -62,6 +62,15 @@ img[src$='.jpg'] {
   color: $p2;
 }
 
+.btn.outlined {
+  background: $c2;
+  color: $c10;
+}
+
+.btn.outlined:hover {
+  background: $c4;
+}
+
 @media (max-width: 768px) {
   .btn {
     padding: 1.2rem 2rem;
